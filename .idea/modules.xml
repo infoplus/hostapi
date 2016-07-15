@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/infoplus-hostapi.iml" filepath="$PROJECT_DIR$/infoplus-hostapi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/restapi/restapi.iml" filepath="$PROJECT_DIR$/samples/restapi/restapi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/cube/samples-cube.iml" filepath="$PROJECT_DIR$/samples/cube/samples-cube.iml" />
+      <module fileurl="file://$PROJECT_DIR$/samples/olap/samples-olap.iml" filepath="$PROJECT_DIR$/samples/olap/samples-olap.iml" />
+    </modules>
+  </component>
+</project>

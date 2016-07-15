@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Schema name="FoodMartSales">
+    <Cube name="Sales">
+        <Table name="sales_fact_1997"/>
+        <Dimension name="Product" foreignKey="product_id">
+            <Hierarchy hasAll="true" allMemberName="All Products" primaryKey="product_id">
+                <Table name="product"/>
+                <Level name="Brand" column="brand_name" uniqueMembers="true"/>
+                <Level name="Product Name" column="product_name" uniqueMembers="true"/>
+            </Hierarchy>
+        </Dimension>
+        <Dimension name="Store" foreignKey="store_id">
+            <Hierarchy hasAll="true" allMemberName="All Locations" primaryKey="store_id">
+                <Table name="store"/>
+                <Level name="Country" column="store_country" uniqueMembers="true"/>
+                <Level name="State" column="store_state" uniqueMembers="true"/>
+                <Level name="Type" column="store_type" uniqueMembers="false"/>
+            </Hierarchy>
+        </Dimension>
+        <Measure name="Units Sold" column="product_id" aggregator="count" formatString="Standard"/>
+        <Measure name="Store Sales" column="store_sales" aggregator="sum" formatString="$ ###,###,###,##0.00"/>
+    </Cube>
+</Schema>

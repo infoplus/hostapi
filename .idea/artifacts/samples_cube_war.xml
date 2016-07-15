@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="samples-cube:war">
+    <output-path>$PROJECT_DIR$/samples/cube/target</output-path>
+    <root id="archive" name="samples-cube-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="samples-cube:war exploded" />
+    </root>
+  </artifact>
+</component>

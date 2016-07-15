@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Schema name="ACMESchema">
+	<Cube name="Sales">
+		<Table name="facts_sales"/>
+		<Dimension name="Product" foreignKey="product_id">
+			<Hierarchy hasAll="true" allMemberName="All Products" primaryKey="product_id">
+				<Table name="dim_product"/>
+				<Level name="Category" column="category" uniqueMembers="true"/>
+				<Level name="Item" column="item" uniqueMembers="true"/>
+			</Hierarchy>
+		</Dimension>
+		<Dimension name="Location" foreignKey="location_id">
+			<Hierarchy hasAll="true" allMemberName="All Locations" primaryKey="location_id">
+				<Table name="dim_location"/>
+				<Level name="Country" column="country" uniqueMembers="true"/>
+				<Level name="Region" column="region" uniqueMembers="true"/>
+				<Level name="City" column="city" uniqueMembers="false"/>
+			</Hierarchy>
+		</Dimension>
+		<Measure name="Units Sold" column="id" aggregator="count" formatString="Standard"/>
+		<Measure name="Turnover" column="turnover" aggregator="sum" formatString="$ ###,###,###,##0.00"/>
+	</Cube>
+</Schema>

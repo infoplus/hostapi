@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.pivot4j:pivot4j-analytics:classes:0.9">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/pivot4j/pivot4j-analytics/0.9/pivot4j-analytics-0.9-classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/pivot4j/pivot4j-analytics/0.9/pivot4j-analytics-0.9-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/pivot4j/pivot4j-analytics/0.9/pivot4j-analytics-0.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
